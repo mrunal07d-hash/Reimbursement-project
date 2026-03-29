@@ -1,15 +1,8 @@
-import mongoose from "mongoose";
+import express from "express";
+const router = express.Router();
 
-const schema = new mongoose.Schema({
-  description: String,
-  amount: Number,
-  status: { type: String, default: "PENDING" },
-  approvals: [
-    {
-      approver: String,
-      status: { type: String, default: "PENDING" }
-    }
-  ]
+router.get("/", (req, res) => {
+  res.json({ message: "Expenses working ✅" });
 });
 
-export default mongoose.model("Expense", schema);
+export default router;
