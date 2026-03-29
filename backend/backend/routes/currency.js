@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
   res.json({
-    message: "Currency route working ✅",
+    message: "Currency working ✅",
     currency: "INR"
   });
 });
