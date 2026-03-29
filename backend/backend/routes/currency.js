@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
-// Simple working route
+// FIXED SAFE ROUTE
 router.get("/", (req, res) => {
     res.json({
-        message: "Currency API working",
+        message: "Currency route working",
         currency: "INR"
     });
 });
